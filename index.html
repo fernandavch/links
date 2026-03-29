@@ -14,45 +14,60 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
+        height: 100vh; 
         margin: 0;
-        padding: 20px;
+        padding: 0;
+        overflow: hidden;
     }
 
     .container {
-        width: 100%;
-        max-width: 450px;
+        width: 90%;
+        max-width: 400px;
         text-align: center;
+    }
+
+    /* --- Avatar --- */
+    .avatar-container {
+        margin-bottom: 20px;
+    }
+
+    .avatar-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #ff1111;
+        object-fit: cover;
+        box-shadow: 0 0 15px rgba(255, 17, 17, 0.3);
     }
 
     /* --- Header --- */
     header {
-        margin-bottom: 40px;
-        padding: 20px;
+        margin-bottom: 25px;
+        padding: 15px;
         border: 1px double #550000;
         background-color: #050505;
     }
 
     h1 {
-        font-size: 1.4rem;
-        letter-spacing: 4px;
+        font-size: 1.2rem;
+        letter-spacing: 3px;
         margin: 0;
         color: #ff1111;
         text-transform: uppercase;
     }
 
     .subtitle {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         letter-spacing: 2px;
-        margin-top: 10px;
-        color: #bbb;
+        margin-top: 8px;
+        color: #fff;
         text-transform: uppercase;
     }
 
     .divider {
         height: 2px;
-        background: linear-gradient(to right, transparent, #ff1111, transparent); /* Gradiente vibrante */
-        margin: 20px auto;
+        background: linear-gradient(to right, transparent, #ff1111, transparent);
+        margin: 15px auto;
         width: 80%;
     }
 
@@ -62,12 +77,12 @@
         background-color: #cc0000;
         color: #000000;
         text-decoration: none;
-        padding: 18px;
-        margin-bottom: 15px;
+        padding: 15px;
+        margin-bottom: 12px;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1.5px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         border: 2px solid #cc0000;
     }
@@ -77,21 +92,30 @@
         color: #ff1111;
         border: 2px solid #ff1111;
         box-shadow: 0 0 20px rgba(255, 17, 17, 0.6);
-        transform: scale(1.03) translateY(-2px);
+        transform: scale(1.03);
     }
 
     footer {
-        margin-top: 50px;
-        font-size: 0.65rem;
+        margin-top: 30px;
+        font-size: 0.6rem;
         color: #333;
         letter-spacing: 3px;
         text-transform: uppercase;
+    }
+
+    @media (max-height: 600px) {
+        body { overflow-y: auto; height: auto; padding: 20px 0; }
+        .avatar-img { width: 80px; height: 80px; }
     }
 </style>
 </head>
 <body>
 
     <div class="container">
+        <div class="avatar-container">
+            <img src="images/avatar.png" alt="Fernanda Vergara" class="avatar-img">
+        </div>
+
         <header>
             <h1>Fernanda Vergara Chávez</h1>
             <div class="subtitle">Pentesting Trainee | Cybersecurity</div>
