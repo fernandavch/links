@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernanda Vergara Chávez | CV </title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-container {
+            width: 100%;
+            max-width: 800px;
+            border: 1px solid #330000;
+            background-color: #050505;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 17, 17, 0.1);
+        }
+
+        /* --- Header Section --- */
+        header {
+            border-bottom: 2px solid #ff1111;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name-title h1 {
+            color: #ff1111;
+            font-size: 1.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            font-size: 0.8rem;
+            text-align: right;
+            color: #888;
+        }
+
+        /* --- Sections --- */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            color: #000000;
+            background-color: #ff1111;
+            display: inline-block;
+            padding: 3px 10px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .entry {
+            margin-bottom: 15px;
+            border-left: 1px solid #444;
+            padding-left: 15px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .entry-subheader {
+            color: #ff1111;
+            font-size: 0.85rem;
+            margin: 5px 0;
+        }
+
+        .entry-content {
+            font-size: 0.85rem;
+            color: #ccc;
+            line-height: 1.4;
+        }
+
+        /* --- Skills Grid --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            font-size: 0.85rem;
+        }
+
+        .skill-category strong {
+            color: #ff1111;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #444;
+            border-top: 1px solid #222;
+            padding-top: 20px;
+        }
+
+        a { color: #ff1111; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            .contact-info { text-align: center; margin-top: 15px; }
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header>
+        <div class="name-title">
+            <h1>Fernanda Vergara Chávez</h1>
+            <div style="color: #eee; font-size: 0.9rem; margin-top: 5px;">Cybersecurity Consultant | Offensive Security</div>
+        </div>
+        <div class="contact-info">
+            [ Ubicación: Puerto Varas, Chile ]<br>
+            [ E-mail: Disponible previa solicitud ]<br>
+            [ <a href="https://fernandavch.github.io/links/">Portfolio_Links</a> ]
+        </div>
+    </header>
+
+    <section id="summary">
+        <h2>Profile</h2>
+        <div class="entry-content">
+            Especialista en Seguridad Ofensiva en formación, con foco en Pentesting Web. Actualmente dedicada al entrenamiento intensivo en escenarios reales de vulnerabilidad web, aplicando metodologías OWASP para la identificación y mitigación de riesgos, entregando reportes técnicos con evidencias y pruebas de concepto (PoC).
+        </div>
+    </section>
+
+   <section id="education">
+        <h2>Education_&_Certs</h2>
+        
+        <!-- Diplomado Red Team -->
+        <div class="entry">
+            <div class="entry-header">
+                <span>Diplomado en Red Team Avanzado</span>
+                <span>2024 - 2026</span>
+            </div>
+            <div class="entry-subheader">Universidad de Santiago de Chile (USACH)</div>
+            <div class="entry-content">
+                Módulos destacados: Pentesting Web Avanzado, Herramientas y técnicas OSINT para Red Team, Técnicas de Evasión de Sistemas de Seguridad y Creación de Malware, Pentesting Cloud (AWS).
+            </div>
+        </div>
+
+        <!-- Diplomado Blue Team -->
+        <div class="entry">
+            <div class="entry-header">
+                <span>Diplomado en Ciberdefensa (Blue Team)</span>
+                <span>2023</span>
+            </div>
+            <div class="entry-subheader">Universidad de Santiago de Chile (USACH)</div>
+            <div class="entry-content">
+                Módulos: Técnicas de Inteligencia de Amenazas para Ciberdefensa, Implementador Líder ISO 27.035, Técnicas de respuesta a ciber incidentes para CSIRT e Implementador Centro de Monitoreo SOC.
+            </div>
+        </div>
+
+        <!-- Certificaciones en progreso -->
+        <div class="entry">
+            <div class="entry-header">
+                <span>Candidata eJPT / PWPT</span>
+                <span>En Progreso</span>
+            </div>
+            <div class="entry-subheader">eLearnSecurity / INE / Academias Especializadas</div>
+            <div class="entry-content">
+                Preparación activa para certificaciones de Junior Penetration Tester y Practical Web Pentesting.
+            </div>
+        </div>
+    </section>
+
+<section id="experience">
+        <h2>Technical_Projects</h2>
+        
+        <!-- Consultoría Real -->
+        <div class="entry">
+            <div class="entry-header">
+                <span>Pentesting Web y Evaluación de Vulnerabilidades</span>
+                <span>Actual</span>
+            </div>
+            <div class="entry-subheader">Consultoría Independiente / Escenarios Reales</div>
+            <div class="entry-content">
+                Ejecución de auditorías de seguridad en aplicaciones web para terceros, enfocadas en la detección de fallas críticas y lógica de negocio. Realización de pruebas de intrusión controladas, análisis de vectores de ataque y entrega de reportes técnicos de hallazgos con recomendaciones de remediación.
+            </div>
+        </div>
+
+        <!-- Labs GitHub -->
+        <div class="entry">
+            <div class="entry-header">
+                <span>Web Pentesting Labs (GitHub)</span>
+                <span>Actual</span>
+            </div>
+            <div class="entry-subheader">Write-ups & PoC</div>
+            <div class="entry-content">
+                Documentación técnica de explotación de vulnerabilidades en entornos controlados como <strong>crAPI</strong> y <strong>Web for Pentester</strong>. Uso de metodologías "Markdown First" para la gestión de evidencias.
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical_Stack</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Herramientas:</strong>
+                Burp Suite, Nmap, Metasploit, FFUF, Gobuster, SQLmap, Wireshark, Docker, etc.
+            </div>
+            <div class="skill-category">
+                <strong>Sistemas / Cloud:</strong>
+                Kali Linux (OS Principal), AWS (CLI & Cloud Security), Bash Scripting.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        [ Fernanda Vergara ]
+    </footer>
+</div>
+
+</body>
+</html>
